@@ -1,0 +1,25 @@
+name: appodeal_flutter
+description: A Flutter plugin to display ads from Appodeal; it supports consent dialog to track users.
+version: 1.1.1
+homepage: https://github.com/vegidio/flutter-appodeal
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: io.vinicius.appodeal_flutter
+        pluginClass: AppodealFlutterPlugin
+      ios:
+        pluginClass: AppodealFlutterPlugin
